@@ -10,7 +10,7 @@ class WeatherRequest:
 
 		self.loc = location
 		self.base_url = 'http://api.openweathermap.org/data/2.5/weather?'
-		self.api_key = '57fc02e5d319ead8f8d88f79b38ee3cd'
+		self.api_key = 'API KEY HERE'
 		self.unit_type = 'units=imperial'
 		self.app_id = 'appid='+self.api_key
 		self.query = 'q='+location
