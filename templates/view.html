@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block head %}
+	<title>Weather</title>
+{% endblock %}
+
+{% block body%}
+	<div class="centered">
+		<h1>{{task.loc}} Weather</h1>
+		<table>
+			<tr>
+				<td>Desc: </td>
+				<td>{{task.request_data.get('weather')[0]['description']}}</td>
+			</tr>
+			<tr>
+				<td>Temp: </td>
+				<td>{{task.request_data.get('main')['temp']}} F</td>
+			</tr>
+			<tr>
+				<td>Feels Like: </td>
+				<td>{{task.request_data.get('main')['feels_like']}} F</td>
+			</tr>
+		</table>
+		<form action="/" method="POST">
+			<input type="submit" value="Back">
+		</form>
+	</div>
+{% endblock %}

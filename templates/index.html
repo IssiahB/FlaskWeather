@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block head %}
+	<title> Weather </title>
+{% endblock %}
+
+{% block body %}
+	<div class="centered">
+		<h1> Weather App </h1>
+		<div class="block">
+			<form action="/search" method="GET">
+				<label> Search Location: </label>
+				<input type="text" name="location" placeholder="eg. 'London', 'New York', ...">
+				<input type="submit" value="Search">
+			</form>
+		</div>
+	</div>
+{% endblock %}

@@ -1,0 +1,32 @@
+body {
+	margin: 0;
+	background-color: #B1D8B7;
+}
+
+h1 {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 50px;
+	color: #2F5233;
+}
+
+input {
+	display: block;
+	margin: auto;
+}
+
+input[type="text"] {
+	margin-top: 5px;
+}
+
+input[type="submit"] {
+	margin-top: 15px;
+}
+
+.centered {
+	display: grid;
+	justify-content: center;
+}
+
+.block {
+	display: inline-block;
+}
